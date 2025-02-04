@@ -43,7 +43,7 @@ Aidmo.map = Aidmo.map || {};
         var pronoun;
         console.log('Response received from API: ', result);
         ambulance = result.Ambulance;
-        displayUpdate(ambulance.Code + ', your ' + ambulance.Service + ' ambulance, is on it\'s way.');
+        displayUpdate(ambulance.Code + ', your ' + ambulance.Type + ' ambulance, is on it\'s way.');
         animateArrival(function animateCallback() {
             displayUpdate(ambulance.Code + ' has arrived. Be prepared');
             Aidmo.map.unsetLocation();
